@@ -14,6 +14,13 @@
 		4BF4A9072C6D4E57008661AF /* TriviaNightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF4A9062C6D4E57008661AF /* TriviaNightTests.swift */; };
 		4BF4A9112C6D4E57008661AF /* TriviaNightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF4A9102C6D4E57008661AF /* TriviaNightUITests.swift */; };
 		4BF4A9132C6D4E57008661AF /* TriviaNightUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF4A9122C6D4E57008661AF /* TriviaNightUITestsLaunchTests.swift */; };
+		4BF4A9382C6D5452008661AF /* MyFont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BF4A9362C6D5432008661AF /* MyFont.ttf */; };
+		4BF4A9392C6D5454008661AF /* Ivy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BF4A9292C6D5088008661AF /* Ivy.ttf */; };
+		4BF4A93A2C6D5515008661AF /* Ivy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BF4A9292C6D5088008661AF /* Ivy.ttf */; };
+		4BF4A93B2C6D5515008661AF /* Ivy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BF4A9292C6D5088008661AF /* Ivy.ttf */; };
+		4BF4A93C2C6D5519008661AF /* MyFont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BF4A9362C6D5432008661AF /* MyFont.ttf */; };
+		4BF4A93D2C6D5519008661AF /* MyFont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BF4A9362C6D5432008661AF /* MyFont.ttf */; };
+		4BF4A9402C6D56B4008661AF /* NewAmsterdam-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BF4A93F2C6D56B4008661AF /* NewAmsterdam-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,9 @@
 		4BF4A90C2C6D4E57008661AF /* TriviaNightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TriviaNightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BF4A9102C6D4E57008661AF /* TriviaNightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaNightUITests.swift; sourceTree = "<group>"; };
 		4BF4A9122C6D4E57008661AF /* TriviaNightUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaNightUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4BF4A9292C6D5088008661AF /* Ivy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ivy.ttf; sourceTree = "<group>"; };
+		4BF4A9362C6D5432008661AF /* MyFont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MyFont.ttf; sourceTree = "<group>"; };
+		4BF4A93F2C6D56B4008661AF /* NewAmsterdam-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewAmsterdam-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +104,7 @@
 		4BF4A8F42C6D4E56008661AF /* TriviaNight */ = {
 			isa = PBXGroup;
 			children = (
+				4BF4A9232C6D4F70008661AF /* project_fonts */,
 				4BF4A8F52C6D4E56008661AF /* TriviaNightApp.swift */,
 				4BF4A8F72C6D4E56008661AF /* ContentView.swift */,
 				4BF4A8F92C6D4E57008661AF /* Assets.xcassets */,
@@ -125,6 +136,16 @@
 				4BF4A9122C6D4E57008661AF /* TriviaNightUITestsLaunchTests.swift */,
 			);
 			path = TriviaNightUITests;
+			sourceTree = "<group>";
+		};
+		4BF4A9232C6D4F70008661AF /* project_fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4BF4A93F2C6D56B4008661AF /* NewAmsterdam-Regular.ttf */,
+				4BF4A9362C6D5432008661AF /* MyFont.ttf */,
+				4BF4A9292C6D5088008661AF /* Ivy.ttf */,
+			);
+			path = project_fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +252,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BF4A9392C6D5454008661AF /* Ivy.ttf in Resources */,
+				4BF4A9402C6D56B4008661AF /* NewAmsterdam-Regular.ttf in Resources */,
 				4BF4A8FD2C6D4E57008661AF /* Preview Assets.xcassets in Resources */,
 				4BF4A8FA2C6D4E57008661AF /* Assets.xcassets in Resources */,
+				4BF4A9382C6D5452008661AF /* MyFont.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +264,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BF4A93A2C6D5515008661AF /* Ivy.ttf in Resources */,
+				4BF4A93C2C6D5519008661AF /* MyFont.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +273,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BF4A93B2C6D5515008661AF /* Ivy.ttf in Resources */,
+				4BF4A93D2C6D5519008661AF /* MyFont.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +453,8 @@
 				DEVELOPMENT_TEAM = D556S9S2GL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TriviaNight/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +484,8 @@
 				DEVELOPMENT_TEAM = D556S9S2GL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TriviaNight/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -520,6 +552,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = D556S9S2GL;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TriviaNightUITests/Info.plist;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Linix.TriviaNightUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -538,6 +571,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = D556S9S2GL;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TriviaNightUITests/Info.plist;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Linix.TriviaNightUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
