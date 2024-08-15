@@ -20,21 +20,71 @@ extension Color {
 }
 
 struct ContentView: View {
-    let mainColor = Color(hex: "#253342")
+    let mainColor = Color(hex: "#53BDA5")
     let accentColor = Color(red: 48/255, green: 105/255, blue: 240/255)
     var body: some View {
         ZStack {
-            mainColor
+            mainColor.ignoresSafeArea()
             VStack (alignment: .center){
-                Spacer().frame(width: 100.0, height: 500.0)
-                Text("Let's go!!!").font(Font.custom("NewAmsterdam-Regular", size: 40)).foregroundStyle(Color.white).bold()
-                Button(action: {
-                    print("Hey Lin!")
-                }, label: {
-                    Text("Greet").foregroundStyle(Color.white).font(Font.custom("NewAmsterdam-Regular", size: 20)).bold()
-                }).padding(.all, 10.0).border(Color.white, width: 2).background(Color.cyan)
+                Text("1 / 10")
+                    .font(Font.custom("NewAmsterdam-Regular", size: 20))
+                    .padding()
+                
+                Text("What day does Lin's birthday fall on?")
+                    .font(Font.custom("NewAmsterdam-Regular", size: 42, relativeTo: .largeTitle))
+                    .multilineTextAlignment(.leading)
+                    .bold()
+                    .lineSpacing(0)
+                Spacer()
+                
+                HStack{
+                    Button(action: {
+                        print("Tapped choice 1")
+                    }, label: {
+                        Text("Choice 5")
+                            .padding()
+                                .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: 3)
+                                .background(Color.white)
+                                .font(Font.custom("Ivy", size: 20))
+                                .padding(.trailing, 15.0)
+                    })
+                    
+                    Button(action: {
+                        print("Tapped choice 2")
+                    }, label: {
+                        Text("Choice 2")
+                            .padding()
+                                .border(Color.black, width: 3)
+                                .background(Color.white)
+                                .font(Font.custom("Ivy", size: 20))
+                    })
+                
+                }
+                
+                HStack{
+                    Button(action: {
+                        print("Tapped choice 3")
+                    }, label: {
+                        Text("Choice 3")
+                            .padding()
+                                .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: 3)
+                                .background(Color.white)
+                                .font(Font.custom("Ivy", size: 20))
+                                .padding(.trailing, 15.0)
+                    })
+                    
+                    Button(action: {
+                        print("Tapped choice 4")
+                    }, label: {
+                        Text("Choice 4")
+                            .padding()
+                                .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: 3)
+                                .background(Color.white)
+                                .font(Font.custom("Ivy", size: 20))
+                    })
+                }
             }
-            .padding()
+            .padding().foregroundColor(Color.black)
         }
         
     }
