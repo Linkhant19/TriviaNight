@@ -59,7 +59,7 @@ struct ContentView: View {
                                 .font(Font.custom("Ivy", size: 20))
                     })
                 
-                }
+                }.padding(.bottom, 10.0)
                 
                 HStack{
                     Button(action: {
