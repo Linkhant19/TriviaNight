@@ -21,7 +21,9 @@ extension Color {
 
 struct ContentView: View {
     let mainColor = Color(hex: "#53BDA5")
-    let accentColor = Color(red: 48/255, green: 105/255, blue: 240/255)
+    
+    let question = Question(questionText: "When is Lin's birthday?", possibleAnswers: ["12", "13", "17", "19"], correctAnswerIndex: 3)
+    
     var body: some View {
         ZStack {
             mainColor.ignoresSafeArea()
@@ -30,7 +32,7 @@ struct ContentView: View {
                     .font(Font.custom("NewAmsterdam-Regular", size: 20))
                     .padding()
                 
-                Text("What day does Lin's birthday fall on?")
+                Text(question.questionText)
                     .font(Font.custom("NewAmsterdam-Regular", size: 42, relativeTo: .largeTitle))
                     .multilineTextAlignment(.leading)
                     .bold()
@@ -38,51 +40,29 @@ struct ContentView: View {
                 Spacer()
                 
                 HStack{
-                    Button(action: {
-                        print("Tapped choice 1")
-                    }, label: {
-                        Text("Choice 5")
-                            .padding()
-                                .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: 3)
-                                .background(Color.white)
-                                .font(Font.custom("Ivy", size: 20))
-                                .padding(.trailing, 15.0)
-                    })
-                    
-                    Button(action: {
-                        print("Tapped choice 2")
-                    }, label: {
-                        Text("Choice 2")
-                            .padding()
-                                .border(Color.black, width: 3)
-                                .background(Color.white)
-                                .font(Font.custom("Ivy", size: 20))
-                    })
+                    ForEach(0..<question.possibleAnswers.count) {answerIndex in
+                        Button(action: {
+                            print("Tapped choice 3")
+                        }, label: {
+                            ChoiceTextView(choiceText: question.possibleAnswers[answerIndex])
+                        })
+                    }
                 
                 }.padding(.bottom, 10.0)
                 
-                HStack{
-                    Button(action: {
-                        print("Tapped choice 3")
-                    }, label: {
-                        Text("Choice 3")
-                            .padding()
-                                .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: 3)
-                                .background(Color.white)
-                                .font(Font.custom("Ivy", size: 20))
-                                .padding(.trailing, 15.0)
-                    })
-                    
-                    Button(action: {
-                        print("Tapped choice 4")
-                    }, label: {
-                        Text("Choice 4")
-                            .padding()
-                                .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: 3)
-                                .background(Color.white)
-                                .font(Font.custom("Ivy", size: 20))
-                    })
-                }
+//                HStack{
+//                    Button(action: {
+//                        print("Tapped choice 3")
+//                    }, label: {
+//                        ChoiceTextView(choiceText: question.possibleAnswers[2])
+//                    })
+//                    
+//                    Button(action: {
+//                        print("Tapped choice 4")
+//                    }, label: {
+//                        ChoiceTextView(choiceText: question.possibleAnswers[3])
+//                    })
+//                }
             }
             .padding().foregroundColor(Color.black)
         }

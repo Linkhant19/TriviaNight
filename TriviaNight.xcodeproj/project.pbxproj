@@ -21,6 +21,8 @@
 		4BF4A93C2C6D5519008661AF /* MyFont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BF4A9362C6D5432008661AF /* MyFont.ttf */; };
 		4BF4A93D2C6D5519008661AF /* MyFont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BF4A9362C6D5432008661AF /* MyFont.ttf */; };
 		4BF4A9402C6D56B4008661AF /* NewAmsterdam-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BF4A93F2C6D56B4008661AF /* NewAmsterdam-Regular.ttf */; };
+		4BF4A9422C7D4AB2008661AF /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF4A9412C7D4AB2008661AF /* Question.swift */; };
+		4BF4A9442C7D4CE9008661AF /* ChoiceTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF4A9432C7D4CE9008661AF /* ChoiceTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		4BF4A9292C6D5088008661AF /* Ivy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ivy.ttf; sourceTree = "<group>"; };
 		4BF4A9362C6D5432008661AF /* MyFont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MyFont.ttf; sourceTree = "<group>"; };
 		4BF4A93F2C6D56B4008661AF /* NewAmsterdam-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewAmsterdam-Regular.ttf"; sourceTree = "<group>"; };
+		4BF4A9412C7D4AB2008661AF /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		4BF4A9432C7D4CE9008661AF /* ChoiceTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				4BF4A8F72C6D4E56008661AF /* ContentView.swift */,
 				4BF4A8F92C6D4E57008661AF /* Assets.xcassets */,
 				4BF4A8FB2C6D4E57008661AF /* Preview Content */,
+				4BF4A9412C7D4AB2008661AF /* Question.swift */,
+				4BF4A9432C7D4CE9008661AF /* ChoiceTextView.swift */,
 			);
 			path = TriviaNight;
 			sourceTree = "<group>";
@@ -285,7 +291,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BF4A9422C7D4AB2008661AF /* Question.swift in Sources */,
 				4BF4A8F82C6D4E56008661AF /* ContentView.swift in Sources */,
+				4BF4A9442C7D4CE9008661AF /* ChoiceTextView.swift in Sources */,
 				4BF4A8F62C6D4E56008661AF /* TriviaNightApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
