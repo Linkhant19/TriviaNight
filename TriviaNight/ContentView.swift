@@ -20,7 +20,8 @@ extension Color {
 }
 
 struct ContentView: View {
-    let mainColor = Color(hex: "#53BDA5")
+    // @State to allow mainColor to be changeable
+    @State var mainColor = Color(hex: "#53BDA5")
     
     let question = Question(questionText: "When is Lin's birthday?", possibleAnswers: ["12", "13", "17", "19"], correctAnswerIndex: 3)
     
@@ -43,6 +44,7 @@ struct ContentView: View {
                     ForEach(0..<question.possibleAnswers.count) {answerIndex in
                         Button(action: {
                             print("Tapped choice 3")
+                            mainColor = answerIndex == question.correctAnswerIndex ? .green: .red
                         }, label: {
                             ChoiceTextView(choiceText: question.possibleAnswers[answerIndex])
                         })
